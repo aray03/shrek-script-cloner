@@ -1,13 +1,17 @@
 import os
 stall=input("\n\n\n\n\n\n\n\n<><><> Press Enter To Begin <><><>")
-amount=1000
+amount=input("How many copies do we need to remove?: ")
+
+amount=int(amount)
 for num in range(amount):
 
-    shrek = open(( 'shrek'+str(num)+'.txt' ), 'w')
-    os.remove('shrek' +str(num) + '.txt')
-    os.system('clear')
-    print((int(num/amount*1000)/100+0), "%"  )
+    try:
+        os.remove('shrek' +str(num) + '.txt')
+        os.system('cls' if os.name == 'nt' else 'clear')
+    except FileNotFoundError:
+        os.system('cls' if os.name == 'nt' else 'clear')
+    print(int(num/amount*1000)/(amount/100), "%"  )
 
-    
-    shrek.close()
-stall=input(' The Work Has Been Finished ')
+os.system('cls' if os.name == 'nt' else 'clear')
+print("100 %")
+print("The Work Has Been Finished!")
