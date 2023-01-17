@@ -18,7 +18,6 @@ for num in range(amount):
         print(str(int((num/amount)*10000)/100) + "%")
         newNum = int((num/amount)*10000)/100
 
-os.system('cls' if os.name == 'nt' else 'clear')
 print("100%")
 print("Deleted", count, "Files")
 print("The Work Has Been Finished!")
