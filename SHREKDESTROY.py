@@ -1,5 +1,5 @@
 import os
-stall=input("\n\n\n\n\n\n\n\n<><><> Press Enter To Begin <><><>")
+stall=input("<><><> Press Enter To Begin <><><>")
 amount=input("How many copies do we need to remove?: ")
 
 count = 0
